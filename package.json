@@ -1,0 +1,28 @@
+{
+  "name": "a-frame_practice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bcjohnblue/A-Frame_practice.git"
+  },
+  "author": "bcjohn",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bcjohnblue/A-Frame_practice/issues"
+  },
+  "homepage": "https://github.com/bcjohnblue/A-Frame_practice#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2",
+    "gulp-load-plugins": "^2.0.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-pug": "^4.0.1",
+    "gulp-pug-lint": "^0.1.6"
+  }
+}
