@@ -9,10 +9,12 @@
   </head>
   <body>
     <a-scene>
-      <a-assets>
-        <a-asset-item id="village" src="../assets/castle_village_scene/scene.gltf"></a-asset-item>
-      </a-assets>
-      <a-gltf-model src="#village"></a-gltf-model>
+      <a-assets><img id="floor2" src="../assets/images/floor2.jpg"/></a-assets>
+      <a-plane src="../assets/images/floor2.jpg" height="5" width="5" rotation="-90 0 0" repeat="5 5" position="0 0 -5"></a-plane>
+      <a-box color="red" position="0 4 -5" animation="property: rotation; to: 0 360 0; loop: true; easing: linear" scale="0.5 0.5 0.5"></a-box>
+      <a-entity position="0 4 -5" animation="property: rotation; to: 0 360 0; loop: true; easing: linear; dur: 5000" scale="0.5 0.5 0.5">
+        <a-box color="green" position="5 0 0" animation="property: rotation; to: 0 360 0; loop: true; easing: linear"></a-box>
+      </a-entity>
     </a-scene>
   </body>
 </html>
