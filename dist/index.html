@@ -1,37 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>Document</title>
-  <script src="https://aframe.io/releases/0.9.2/aframe.min.js"></script>
-</head>
-
-<body>
-  <a-scene>
-    <a-assets>
-      <a-asset-item id="village" src="../assets/castle_village_scene/scene.gltf"></a-asset-item>
-      <a-asset-item id="catapult-o" src="../assets/catapult/Catapult.obj"></a-asset-item>
-      <a-asset-item id="catapult-m" src="../assets/catapult/Catapult.mtl"></a-asset-item>
-    </a-assets>
-    <a-entity position="5 0 55" rotation="0 30 0">
-      <a-camera></a-camera>
-    </a-entity>
-    <a-gltf-model src="#village"></a-gltf-model>
-    <a-obj-model src="#catapult-o" mtl="#catapult-m" position="-3 0 52" scale="0.3 0.3 0.3"></a-obj-model>
-    <a-assets><img id="floor2" src="../assets/images/floor2.jpg" /></a-assets>
-    <a-plane src="../assets/images/floor2.jpg" height="5" width="5" rotation="-90 0 0" repeat="5 5" position="0 0 -5">
-    </a-plane>
-    <a-box color="red" position="0 4 -5" animation="property: rotation; to: 0 360 0; loop: true; easing: linear"
-      scale="0.5 0.5 0.5"></a-box>
-    <a-entity position="0 4 -5" animation="property: rotation; to: 0 360 0; loop: true; easing: linear; dur: 5000"
-      scale="0.5 0.5 0.5">
-      <a-box color="green" position="5 0 0" animation="property: rotation; to: 0 360 0; loop: true; easing: linear">
-      </a-box>
-    </a-entity>
-  </a-scene>
-</body>
-
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>Document</title>
+    <script src="https://aframe.io/releases/0.9.2/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <a-assets><img id="brick" src="../assets/images/brick.jpg"/><img id="white_brick" src="../assets/images/white_brick.jpg"/></a-assets>
+      <a-box src="#brick" position="1 2 -3" scale="-1 1 1" width="2" height="2" depth="2" normal-map="#brick" normal-scale="1 -1"></a-box>
+      <a-box src="#white_brick" position="-1 2 -3"></a-box>
+    </a-scene>
+  </body>
 </html>
