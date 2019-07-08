@@ -1,4 +1,9 @@
 a-scene
   a-assets
     a-asset-item#village(src="../assets/castle_village_scene/scene.gltf")
+    a-asset-item#catapult-o(src="../assets/catapult/Catapult.obj")
+    a-asset-item#catapult-m(src="../assets/catapult/Catapult.mtl")
+  a-entity(position="5 0 55" rotation="0 30 0")
+    a-camera
   a-gltf-model(src="#village")
+  a-obj-model(src="#catapult-o" mtl="#catapult-m" position="-3 0 52" scale="0.3 0.3 0.3")

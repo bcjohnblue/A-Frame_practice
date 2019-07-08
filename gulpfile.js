@@ -8,7 +8,7 @@ const paths = {
   pug: {
     src: 'src/index.pug',
     dest: 'dist/',
-    watch: 'src/index.pug'
+    watch: ['src/index.pug', 'src/pugs/*.pug']
   },
   img: {
     src: 'src/assets/**/*',

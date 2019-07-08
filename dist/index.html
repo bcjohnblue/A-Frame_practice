@@ -11,8 +11,14 @@
     <a-scene>
       <a-assets>
         <a-asset-item id="village" src="../assets/castle_village_scene/scene.gltf"></a-asset-item>
+        <a-asset-item id="catapult-o" src="../assets/catapult/Catapult.obj"></a-asset-item>
+        <a-asset-item id="catapult-m" src="../assets/catapult/Catapult.mtl"></a-asset-item>
       </a-assets>
+      <a-entity position="5 0 55" rotation="0 30 0">
+        <a-camera></a-camera>
+      </a-entity>
       <a-gltf-model src="#village"></a-gltf-model>
+      <a-obj-model src="#catapult-o" mtl="#catapult-m" position="-3 0 52" scale="0.3 0.3 0.3"></a-obj-model>
     </a-scene>
   </body>
 </html>
